@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++17
+CXXFLAGS = -std=c++11
 
 INCLUDES = -Isrc/includes -I/usr/include/jsoncpp
 
@@ -22,4 +22,3 @@ clean:
 	rm -f $(OBJ_FILES) $(TARGET)
 
 .PHONY: clean
-

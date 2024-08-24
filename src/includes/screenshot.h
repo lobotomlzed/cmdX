@@ -1,11 +1,17 @@
-#ifndef UPLOAD_H
-#define UPLOAD_H
+#ifndef SCREENSHOT_H
+#define SCREENSHOT_H
 
 #include <string>
+#include <utility>
 
-namespace Upload {
-    bool uploadFile(const std::string& uploadUrl, const std::string& filePath);
+namespace Screenshot {
+    enum class Mode {
+        FullScreen,
+        AreaSelection
+    };
+
+    std::string capture(Mode mode = Mode::FullScreen);
+    std::string captureArea(const std::pair<std::pair<int, int>, std::pair<int, int>>& area);
 }
 
-#endif // UPLOAD_H
-
+#endif

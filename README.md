@@ -9,5 +9,4 @@
 - `libjsoncpp`
 
 ## Usage:
-- `./cmdX [config.sxcu]` – Captures a screenshot and uploads it using the provided configuration file.
-- `./cmdX` – Captures a screenshot and saves it locally.
+- `./cmdX [config.sxcu] full/areah` – Captures a screenshot in a mode, uploads using the config file. 
